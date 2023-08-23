@@ -7,15 +7,15 @@
 <body>
     <script>
         var pessoas = [];
-        var perguntaparar = prompt("Deseja Iniciar?")
+        var perguntaparar = prompt("Deseja inserir informação? 1-sim 2- não")
 
-        while (perguntaparar !== "parar" ) {
+        while (perguntaparar === "1" ) {
             var pergunta1 = prompt("Diga a idade de alguém")
             var pergunta2 = prompt("Diga o nome de alguém")
             var pergunta3 = prompt("Diga o cpf de alguém")
             var novaarray = [pergunta1, pergunta2, pergunta3];
             pessoas.push(novaarray)
-            perguntaparar = prompt("Deseja parar? \nDigite PARAR \nDigite NÃO")
+            perguntaparar = prompt("Deseja inserir informação? 1-sim 2- não")
         }
 
 
