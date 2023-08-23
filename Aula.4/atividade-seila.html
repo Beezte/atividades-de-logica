@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 1 - Logica de Programação</title>
+</head>
+<body>
+    <script>
+        var totalpesquisa = 0;
+        var contOtimo = 0;
+        var contBom = 0;
+        var contRegular = 0;
+        var somaIdadeOtimo = 0;
+
+        do {
+            var opinion = parseInt(prompt('Qual sua opinião acerca do filme? Escolha uma das opções abaixo para 1 - OTIMO 2 - BOM 3 - REGULAR'))
+            var idade = parseInt(prompt('qual sua idade'))
+
+            switch (opinion) {
+                case 3:
+                    somaIdadeOtimo = somaIdadeOtimo + idade;
+                    contOtimo = contOtimo + 1;
+                    totalpesquisa = totalpesquisa + 1
+                    break;
+                case 2:
+                    contBom = contBom + 1;
+                    totalpesquisa = totalpesquisa + 1
+                    break;
+                case 1:
+                    contRegular = contRegular+1;
+                    totalpesquisa = totalpesquisa + 1
+                    break;
+                default:
+                    alert('Opção invalida');
+            }
+        }while (opinion <= 3);
+        var mediaIdadeOtimo = somaIdadeOtimo/contOtimo;
+        if (mediaIdadeOtimo <= 0){
+            mediaIdadeOtimo = 0;
+        }
+
+        document.write("acharam o filme <br> <br>");
+        document.write("Otimo: " + contOtimo);
+        document.write("<br>");
+        document.write("Média das idades dos que responderam Otimo " + mediaIdadeOtimo);
+        document.write("<br>");
+        document.write("Bom: " + contBom);
+        document.write("<br>");
+        document.write("Regular: " + contRegular);
+        document.write("<br>");
+        document.write("Total de opiniões coletadas para essa pesquisa foi de " + totalpesquisa);
+
+    </script>
+</body>
+</html>

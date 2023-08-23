@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <title>contador</title>
+</head>
+<body>
+
+  <script>
+    var contaMaiorIdade = 0;
+    var idade = parseInt(prompt("digite a idade"));
+
+    while (idade >= 0){
+        if (idade >= 18){
+            contaMaiorIdade = contaMaiorIdade+1;
+        }
+        idade = parseInt(prompt("digite a idade"));
+    }
+    document.write("o total de pessoas maiores de idade é: " +contaMaiorIdade)
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Aula - Lógica de Programação",
+  "version": "1.0.0",
+  "dependencies": {
+    "sequelize": "^6.32.1"
+  }
+}

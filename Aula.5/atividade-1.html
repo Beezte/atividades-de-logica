@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 5 - Logica de Programação</title>
+</head>
+<body>
+    <script>
+        var nomesbase = ["Maria", "José", "Machado", "Manoel","Ariano", "Alceu"]
+        var nomeinformado = prompt("Por favor, insira seu nome")
+
+        if (nomesbase.includes(nomeinformado)){
+            var indice = nomesbase.indexOf(nomeinformado)
+            document.write(indice)
+        }else {
+            document.write("Nome não encontrado")
+        }
+
+        // var nomes = ["Maria", "José", "Machado", "Manoel","Ariano", "Alceu"]
+        // var sobrenomes = ["da Silva", "dps Santos", "de Assis", "Bandeira", "Suassuna", "Valença"]
+        // var nomeCompleto = [];
+        //
+        // for (var i=0; i <= nomes.length -1; i++){
+        //     nomeCompleto.push(nomes[i]+" "+sobrenomes[i]);
+        //     document.write(nomeCompleto[i]+"<br>")
+        // }
+        // console.log(nomeCompleto);
+    </script>
+</body>
+</html>

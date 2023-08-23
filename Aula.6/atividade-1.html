@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 6 - Logica de Programação</title>
+</head>
+<body>
+    <script>
+        var pessoas = [];
+        var perguntaparar = prompt("Deseja Iniciar?")
+
+        while (perguntaparar !== "parar" ) {
+            var pergunta1 = prompt("Diga a idade de alguém")
+            var pergunta2 = prompt("Diga o nome de alguém")
+            var pergunta3 = prompt("Diga o cpf de alguém")
+            var novaarray = [pergunta1, pergunta2, pergunta3];
+            pessoas.push(novaarray)
+            perguntaparar = prompt("Deseja parar? \nDigite PARAR \nDigite NÃO")
+        }
+
+
+        //imprimir o CPF,a idade de Fernando e o nome
+        for (var i = 0; i <= pessoas.length -1; i++){
+            document.write("Idade: "+ pessoas[i][0] + " Nome: " + pessoas[i][1] + " CPF: " + pessoas[i][2] + "<br>")
+            document.write("<br>")
+        }
+            // console.log(pessoas);
+            // document.write(pessoas[0][0] + " idade de juju <br>");
+            // document.write(pessoas[0][1] + " nome de juju <br>");
+            // document.write(pessoas[0][2] + " cpf de juju <br>");
+            // document.write("<br>");
+            //
+            // document.write(pessoas[1][0] + " idade de maria <br>");
+            // document.write(pessoas[1][1] + " nome de maria <br>");
+            // document.write(pessoas[1][2] + " cpf de maria <br>");
+            // document.write("<br>");
+            //
+            // document.write(pessoas[2][0] + " idade de jose <br>");
+            // document.write(pessoas[2][1] + " nome de jose <br>");
+            // document.write(pessoas[2][2] + " cpf de jose <br>");
+            // document.write("<br>");
+            //
+            // document.write(pessoas[3][0] + " idade de fernando <br>");
+            // document.write(pessoas[3][1] + " nome de fernando <br>");
+            // document.write(pessoas[3][2] + " cpf de fernando <br>");
+            // document.write("<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var codigo = prompt("Qual codigo do produto?")
+        codigo = parseFloat(codigo)
+        var quantidade = prompt("Qual a quantidade do produto?")
+        quantidade = parseFloat(quantidade)
+
+        if(codigo == 100){
+            var pagarhotdog = quantidade*1.20
+            document.write("O valor a pagar é R$" + pagarhotdog)
+        }else{
+            if(codigo == 101){
+                var pagarbaurusimples = quantidade*1.30
+                document.write("O valor a pagar é R$" + pagarbaurusimples)
+            }else{
+                if(codigo == 102){
+                    var pagarbaurucomovo = quantidade*1.50
+                    document.write("O valor a pagar é R$" + pagarbaurucomovo)
+                }else{
+                    if(codigo = 103){
+                        var pagarhamburguer = quantidade*1.20
+                        document.write("O valor a pagar é R$" + pagarhamburguer)
+                    }else{
+                        if(codigo == 104){
+                            var pagarcheeseb = quantidade*1.30
+                            document.write("O valor a pagar é R$" + pagarcheeseb)
+                        }else{
+                            if(codigo == 105){
+                                var pagarrefri = quantidade*1.00
+                                document.write(pagarrefri)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
